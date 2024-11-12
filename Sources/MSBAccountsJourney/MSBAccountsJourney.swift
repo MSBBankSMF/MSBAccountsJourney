@@ -1,2 +1,11 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+//
+//  MSBAccountsJourney.swift
+//  MSBAccountsJourney
+//
+//  Created by doandat on 11/11/24.
+//
+
+import UIKit
+
+public struct MSBAccountsJourney {}
+

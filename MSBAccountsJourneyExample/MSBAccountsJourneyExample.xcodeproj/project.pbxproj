@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0F75BB42CE1C65F000CCEEE /* MSBCore in Frameworks */ = {isa = PBXBuildFile; productRef = B0F75BB32CE1C65F000CCEEE /* MSBCore */; };
+		B03FB7C22CE1D951009A9ED3 /* MSBAccountsJourney in Frameworks */ = {isa = PBXBuildFile; productRef = B03FB7C12CE1D951009A9ED3 /* MSBAccountsJourney */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F75BB42CE1C65F000CCEEE /* MSBCore in Frameworks */,
+				B03FB7C22CE1D951009A9ED3 /* MSBAccountsJourney in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 			);
 			name = MSBAccountsJourneyExample;
 			packageProductDependencies = (
-				B0F75BB32CE1C65F000CCEEE /* MSBCore */,
+				B03FB7C12CE1D951009A9ED3 /* MSBAccountsJourney */,
 			);
 			productName = MSBAccountsJourneyExample;
 			productReference = B0F75B732CE1C600000CCEEE /* MSBAccountsJourneyExample.app */;
@@ -210,7 +210,7 @@
 			mainGroup = B0F75B6A2CE1C600000CCEEE;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B0F75BA12CE1C610000CCEEE /* XCLocalSwiftPackageReference "../../MSBCore" */,
+				B03FB7C02CE1D946009A9ED3 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B0F75B742CE1C600000CCEEE /* Products */;
@@ -610,17 +610,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		B0F75BA12CE1C610000CCEEE /* XCLocalSwiftPackageReference "../../MSBCore" */ = {
+		B03FB7C02CE1D946009A9ED3 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../MSBCore;
+			relativePath = ../../MSBAccountsJourney;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B0F75BB32CE1C65F000CCEEE /* MSBCore */ = {
+		B03FB7C12CE1D951009A9ED3 /* MSBAccountsJourney */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B0F75BA12CE1C610000CCEEE /* XCLocalSwiftPackageReference "../../MSBCore" */;
-			productName = MSBCore;
+			package = B03FB7C02CE1D946009A9ED3 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */;
+			productName = MSBAccountsJourney;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
