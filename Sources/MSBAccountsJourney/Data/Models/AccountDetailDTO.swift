@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct AccountDetailDTO: Decodable {
+public struct AccountDetailDTO: Sendable, Decodable {
     public let id: String
     public let productId: String
     public let productKindName: String?

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ClientCommonGen2
 
 public final class AccountDetailUseCaseImp: AccountDetailsUseCase {
     private let repository: AccountRepositoryProtocol
@@ -16,9 +15,9 @@ public final class AccountDetailUseCaseImp: AccountDetailsUseCase {
         self.repository = repository
     }
     
-    public func getAccountDetail(arrangementId: String, _ completion: @escaping(Result<MSBAccountsJourney.AccountDetailsModel, MSBAccountsJourney.ErrorResponse>) -> Void) {
-        let results = try? self.repository.getArrangementById(arrangementId: arrangementId)
-        
+    public func getAccountDetail(arrangementId: String) async throws -> MSBAccountsJourney.AccountDetailsModel {
+        let results = try await self.repository.getArrangementById(arrangementId: arrangementId)
+        return results
     }
 }
 
