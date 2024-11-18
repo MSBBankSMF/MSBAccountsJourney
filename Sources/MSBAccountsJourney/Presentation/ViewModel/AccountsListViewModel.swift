@@ -10,7 +10,6 @@ import Combine
 import Resolver
 import MSBNetworking
 
-@MainActor
 final class AccountsListViewModel: NSObject {
     
     @Published private(set) var allAccounts = [AccountUIModel]()
@@ -23,6 +22,7 @@ final class AccountsListViewModel: NSObject {
         return useCase
     }()
     
+    @MainActor
     private func getAccountSummary(fromEvent event: AccountListScreenEvent) {
         screenState = .loading
         Task { @MainActor in
@@ -40,7 +40,7 @@ final class AccountsListViewModel: NSObject {
         }
     }
     
-    func onEvent(_ event: AccountListScreenEvent) {
+    @MainActor func onEvent(_ event: AccountListScreenEvent) {
         switch event {
         case .getAccounts:
             getAccountSummary(fromEvent: .getAccounts)
@@ -49,14 +49,4 @@ final class AccountsListViewModel: NSObject {
         }
     }
 
-}
-
-extension Sequence {
-    func asyncMap<T>(_ transform: (Element) async throws -> T) async rethrows -> [T] {
-        var values = [T]()
-        for element in self {
-            try await values.append(transform(element))
-        }
-        return values
-    }
 }

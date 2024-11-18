@@ -14,7 +14,7 @@ import MSBCoreUI
 final class AccountsListViewController: UIViewController {
     
     // MARK: - Properties
-    var viewModel: AccountsListViewModel
+    var viewModel: AccountsListViewModel = AccountsListViewModel()
     private var cancellables = Set<AnyCancellable>()
     private let viewDidAppearSubject = PassthroughSubject<Void, Never>()
 
@@ -88,6 +88,7 @@ final class AccountsListViewController: UIViewController {
     }
     
     private func setupView() {
+        view.backgroundColor = .green
         view.addSubview(accountView)
         view.addSubview(loadingView)
         setupLayout()
