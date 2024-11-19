@@ -53,20 +53,20 @@ extension MSBAccountCoordinator: MSBAccountNavigation {
 
 
 extension MSBAccountCoordinator {
-    func makeAccountListTransition() -> NavigationTransition {
-        let viewModel = AccountsListViewModel()
-//        let controller = AccountsListViewController(viewModel: viewModel)
-//        controller.router = self
-//        return .push(controller)
-        return .none()
-    }
-    
-    func makeAccountDetailTransition(arrangementId: String) -> NavigationTransition {
+//    func makeAccountListTransition() -> NavigationTransition {
 //        let viewModel = AccountsListViewModel()
-//        let controller = AccountsListViewController(viewModel: viewModel)
-//        controller.router = self
-//        return .push(controller)
-        return .none()
-    }
-    
+////        let controller = AccountsListViewController(viewModel: viewModel)
+////        controller.router = self
+////        return .push(controller)
+//        return .none()
+//    }
+//    
+//    func makeAccountDetailTransition(arrangementId: String) -> NavigationTransition {
+////        let viewModel = AccountsListViewModel()
+////        let controller = AccountsListViewController(viewModel: viewModel)
+////        controller.router = self
+////        return .push(controller)
+//        return .none()
+//    }
+//    
 }
