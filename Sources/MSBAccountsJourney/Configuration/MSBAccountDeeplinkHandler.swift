@@ -7,6 +7,7 @@
 import Foundation
 import MSBDeeplink
 import Resolver
+//import CommonDependencies
 import UIKit
 
 public final class MSBAccountDeeplinkHandler: DeeplinkHandlerProtocol {    

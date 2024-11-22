@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -14,9 +14,12 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../../MSBCore"),
-        .package(url: "https://github.com/hmlongco/Resolver.git", from: "1.5.1"),
-        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1")),
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "15.0.0")),
+        .package(path: "../../PublicLib/SnapKit"),
+        .package(path: "../../PublicLib/RxCocoa"),
+        .package(path: "../../PublicLib/Resolver"),
+//        .package(url: "https://github.com/hmlongco/Resolver.git", from: "1.5.1"),
+//        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1")),
+//        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "14.0.1")),
 //        .package(url: "https://github.com/quickbirdstudios/XCoordinator.git", .upToNextMajor(from: "2.2.1"))
     ],
     targets: [
@@ -30,9 +33,10 @@ let package = Package(
                 .product(name: "MSBPreferences", package: "MSBCore"),
                 .product(name: "MSBNetworking", package: "MSBCore"),
                 .product(name: "MSBDeeplink", package: "MSBCore"),
-                "Resolver",
                 "SnapKit",
-                "Moya",
+                "RxCocoa",
+                "Resolver"
+//                "Moya",
 //                "XCoordinator"
             ]
         ),

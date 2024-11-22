@@ -1,88 +1,24 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
-        "state": {
-          "branch": null,
-          "revision": "e16d3481f5ed35f0472cb93350085853d754913f",
-          "version": "5.10.1"
-        }
-      },
-      {
-        "package": "CombineCocoa",
-        "repositoryURL": "https://github.com/CombineCommunity/CombineCocoa.git",
-        "state": {
-          "branch": null,
-          "revision": "7300c75ff9e072aa7fd0fccefcc88f74aae9bf56",
-          "version": "0.4.1"
-        }
-      },
-      {
-        "package": "Foil",
-        "repositoryURL": "https://github.com/jessesquires/Foil.git",
-        "state": {
-          "branch": null,
-          "revision": "b7839568d23a05614d97d053a450ca88541fe4a5",
-          "version": "6.0.0"
-        }
-      },
-      {
-        "package": "Moya",
-        "repositoryURL": "https://github.com/Moya/Moya.git",
-        "state": {
-          "branch": null,
-          "revision": "c263811c1f3dbf002be9bd83107f7cdc38992b26",
-          "version": "15.0.3"
-        }
-      },
-      {
-        "package": "ReactiveSwift",
-        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
-          "version": "6.7.0"
-        }
-      },
-      {
-        "package": "Resolver",
-        "repositoryURL": "https://github.com/hmlongco/Resolver.git",
-        "state": {
-          "branch": null,
-          "revision": "47602af1ac8d7952299fbd0bda3cfbd12cf3a8ca",
-          "version": "1.5.1"
-        }
-      },
-      {
-        "package": "RxSwift",
-        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "c7c7d2cf50a3211fe2843f76869c698e4e417930",
-          "version": "6.8.0"
-        }
-      },
-      {
-        "package": "SnapKit",
-        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
-        "state": {
-          "branch": null,
-          "revision": "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
-          "version": "5.7.1"
-        }
-      },
-      {
-        "package": "SwiftyJSON",
-        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
-        "state": {
-          "branch": null,
-          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
-          "version": "4.3.0"
-        }
+  "originHash" : "1d9bdcd5203099017fe2d69f958b43d6279bd74cfbb34b7ecab5b54396f0a75d",
+  "pins" : [
+    {
+      "identity" : "foil",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jessesquires/Foil.git",
+      "state" : {
+        "revision" : "b7839568d23a05614d97d053a450ca88541fe4a5",
+        "version" : "6.0.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "revision" : "2b6054efa051565954e1d2b9da831680026cd768",
+        "version" : "4.3.0"
+      }
+    }
+  ],
+  "version" : 3
 }

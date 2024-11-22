@@ -56,7 +56,7 @@ final class AccountsListViewController: UIViewController {
         
     private func setupLayout() {
         accountView.snp.makeConstraints {
-            $0.horizontalEdges.equalToSuperview()
+//            $0.horizontalEdges.equalToSuperview()
             $0.top.equalTo(view.safeAreaLayoutGuide)
         }
         
