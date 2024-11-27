@@ -14,14 +14,8 @@ extension MSBAccountsJourney {
         public init() {
             // no code required
         }
-        /// Configuration for ``AccountsList`` screen
-//        public var accountsList = AccountsList.Configuration()
-//        
-//        /// Configuration for ``accountDetails`` screen
-//        public var accountDetails = AccountDetails.Configuration()
-//        
-//        /// Configuration of styles used in the Accounts Journey
-//        public var design = Design()
+        
+        
     }
 }
 

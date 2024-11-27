@@ -13,10 +13,11 @@ let package = Package(
             targets: ["MSBAccountsJourney"]),
     ],
     dependencies: [
-        .package(path: "../../MSBCore"),
-        .package(path: "../../PublicLib/SnapKit"),
-        .package(path: "../../PublicLib/RxCocoa"),
-        .package(path: "../../PublicLib/Resolver"),
+        .package(path: "../MSBCore"),
+        .package(path: "../MSBCoreUI"),
+        .package(path: "../PublicLib/SnapKit"),
+        .package(path: "../MSBPublicLibs/RxCocoa"),
+        .package(path: "../MSBPublicLibs/Resolver"),
         .package(url: "https://github.com/CombineCommunity/CombineCocoa.git", from: "0.2.1")
     ],
     targets: [
@@ -26,7 +27,7 @@ let package = Package(
             name: "MSBAccountsJourney",
             dependencies: [
                 "MSBCore",
-                .product(name: "MSBCoreUI", package: "MSBCore"),
+                .product(name: "MSBCoreUI", package: "MSBCoreUI"),
                 .product(name: "MSBPreferences", package: "MSBCore"),
                 .product(name: "MSBNetworking", package: "MSBCore"),
                 .product(name: "MSBDeeplink", package: "MSBCore"),

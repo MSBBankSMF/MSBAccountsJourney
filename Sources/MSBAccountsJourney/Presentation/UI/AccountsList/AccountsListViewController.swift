@@ -26,21 +26,7 @@ final class AccountsListViewController: UIViewController {
         let v = AccountView()
         return v
     }()
-    
-    private lazy var logoutButton: UIButton = {
-        let b = UIButton()
-        b.setTitle("Logout", for: .normal)
-        b.setTitleColor(.red, for: .normal)
-        return b
-    }()
-    
-    private lazy var revokeButton: UIButton = {
-        let b = UIButton()
-        b.setTitle("Revoke", for: .normal)
-        b.setTitleColor(.red, for: .normal)
-        return b
-    }()
-    
+        
     private var cancellableSet: Set<AnyCancellable> = []
 
     // MARK: - Initialisation
@@ -73,34 +59,8 @@ final class AccountsListViewController: UIViewController {
     
     private func setupSubscriptions() {
         cancellableSet = []
-        logoutButton
-            .tapPublisher
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] in
-                self?.logout()
-            }
-            .store(in: &cancellableSet)
-        
-        
-        revokeButton
-            .tapPublisher
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] in
-                self?.revoke()
-            }
-            .store(in: &cancellableSet)
     }
     
-    private func logout() {
-        let session = Resolver.optional(MSBSessionProtocol.self)
-        session?.logout()
-    }
-    
-    private func revoke() {
-        let session = Resolver.optional(MSBSessionProtocol.self)
-        session?.revoke()
-    }
-
     // MARK: - Private methods
         
     private func setupLayout() {
@@ -112,16 +72,7 @@ final class AccountsListViewController: UIViewController {
         loadingView.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
-        
-        logoutButton.snp.makeConstraints {
-            $0.center.equalToSuperview()
-        }
-        
-        revokeButton.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.top.equalTo(logoutButton.snp.bottom).offset(20)
-        }
-        
+                
         
     }
     
@@ -151,8 +102,6 @@ final class AccountsListViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(accountView)
         view.addSubview(loadingView)
-        view.addSubview(logoutButton)
-        view.addSubview(revokeButton)
         setupLayout()
     }
     
