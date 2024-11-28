@@ -4,45 +4,33 @@
 //
 //  Created by doandat on 12/11/24.
 //
-import UIKit
-import SnapKit
+import SwiftUI
 
-final class AccountView: UIView {
-    public let accountNameLabel: UILabel = {
-        let label = UILabel()
-        label.font = .preferredFont(forTextStyle: .headline)
-        label.textColor = .label
-        return label
-    }()
-    
-    public let balanceLabel: UILabel = {
-        let label = UILabel()
-        label.font = .preferredFont(forTextStyle: .headline)
-        label.textColor = .label
-        return label
-    }()
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupUI()
-    }
-    
-    private func setupUI() {
-        let stackView = UIStackView(arrangedSubviews: [accountNameLabel, balanceLabel])
-        stackView.spacing = 10
-        stackView.axis = .vertical
-        addSubview(stackView)
-        stackView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+struct AccountView: View {
+    let account: AccountUIModel
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(account.name ?? "")
+                .font(.headline)
+                .foregroundColor(.primary)
+            
+            Text(account.balanceFormatted ?? "")
+                .font(.headline)
+                .foregroundColor(.primary)
         }
+        .padding()
+        .background(Color(.systemBackground))
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
-    
-    func bind(account: AccountUIModel) {
-        accountNameLabel.text = account.name
-        balanceLabel.text = account.balanceFormatted
+}
+
+// MARK: - Preview
+struct AccountView_Previews: PreviewProvider {
+    static var previews: some View {
+        AccountView(account: AccountUIModel(name: "Sample Account", balance: Currency(amount: "10000", currencyCode: "VND")))
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

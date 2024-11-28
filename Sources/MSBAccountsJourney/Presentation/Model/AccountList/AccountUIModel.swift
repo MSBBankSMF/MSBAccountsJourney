@@ -5,7 +5,7 @@
 //  Created by doandat on 12/11/24.
 //
 
-import UIKit
+import Foundation
 
 public struct AccountUIModel: Sendable {
     /// Unique id
