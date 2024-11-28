@@ -9,7 +9,9 @@ import SwiftUI
 import Combine
 import MSBCoreUI
 
-struct AccountsListView: View {
+struct AccountsListView: MSBView {
+    var identifier: String = String(describing: Self.self)
+    
     var viewModel: AccountsListViewModel
     @State private var showLoading = false
     

@@ -7,6 +7,7 @@
 import Foundation
 import UIKit
 import SwiftUI
+import MSBCoreUI
 
 public final class MSBAccountCoordinator {
     private let navigationController: UINavigationController
@@ -21,7 +22,7 @@ extension MSBAccountCoordinator: MSBAccountNavigation {
     public func routeToAccountList() {
         let viewModel = AccountsListViewModel()
         let contentView = AccountsListView(viewModel: viewModel)
-        let controller = UIHostingController(rootView: contentView)
+        let controller = MSBHostingController(rootView: contentView)
         navigationController.pushViewController(controller, animated: true)
     }
     

@@ -7,5 +7,7 @@
 
 import Foundation
 
-public struct MSBAccountsJourney {}
+public struct MSBAccountsJourney {
+    
+}
 
