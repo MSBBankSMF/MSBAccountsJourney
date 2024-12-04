@@ -18,7 +18,8 @@ let package = Package(
         .package(path: "../PublicLib/SnapKit"),
         .package(path: "../MSBPublicLibs/RxCocoa"),
         .package(path: "../MSBPublicLibs/Resolver"),
-        .package(url: "https://github.com/CombineCommunity/CombineCocoa.git", from: "0.2.1")
+        .package(url: "https://github.com/CombineCommunity/CombineCocoa.git", from: "0.2.1"),
+        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "15.0.0")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -34,7 +35,8 @@ let package = Package(
                 "SnapKit",
                 "RxCocoa",
                 "Resolver",
-                "CombineCocoa"
+                "CombineCocoa",
+                "Moya"
 
             ]
         ),

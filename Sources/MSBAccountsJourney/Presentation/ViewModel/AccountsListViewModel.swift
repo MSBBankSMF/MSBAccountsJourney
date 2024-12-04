@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import Resolver
 import MSBNetworking
+import MSBLogger
 
 final class AccountsListViewModel: NSObject {
     
@@ -24,16 +25,25 @@ final class AccountsListViewModel: NSObject {
     
     @MainActor
     private func getAccountSummary(fromEvent event: AccountListScreenEvent) {
-        screenState = .loading
         Task { @MainActor in
             do {
-                let accounts: [MSBAccountsJourney.AccountsSummary] = try await self.accountsListUseCase.getAccountSummary()
-                self.allAccounts = accounts.map{ $0.toMapUI() }
-                if allAccounts.isEmpty {
-                    screenState = .emptyResults
-                } else {
-                    screenState = .loaded
+                try await MSBAPIClient.shared.performRequest(action: {
+                    let accounts: [MSBAccountsJourney.AccountsSummary] = try await self.accountsListUseCase.getAccountSummary()
+                    self.allAccounts = accounts.map{ $0.toMapUI() }
+                    if allAccounts.isEmpty {
+                        screenState = .emptyResults
+                    } else {
+                        screenState = .loaded
+                    }
+                }, loading: { [weak self] isLoading in
+                    guard let self else { return }
+                    self.screenState = isLoading ? .loading : .loaded
+                }, alertErrorNetworkConnection: MSBAPIClient.shared.alertErrorNetworkConnection,
+                 alertErrorNetworkCommon: MSBAPIClient.shared.alertErrorNetworkCommon,
+                 onAlertNetworkAction: { action, error in
+                    MSBLogger().debug("\(action) error: \(error)")
                 }
+                )
             } catch {
                 screenState = .hasError
             }

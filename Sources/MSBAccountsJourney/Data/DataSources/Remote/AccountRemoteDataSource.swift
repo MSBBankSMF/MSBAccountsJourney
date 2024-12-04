@@ -7,5 +7,5 @@
 
 public protocol AccountRemoteDataSource: Sendable {
     func getArrangementById(arrangementId: String) async throws -> AccountDetailDTO
-    func getAccountSummary() async throws -> [AccountSummaryDTO]
+    func getAccountSummary() async throws -> [AccountSummaryDTO.AccountSummaryItemDTO]
 }

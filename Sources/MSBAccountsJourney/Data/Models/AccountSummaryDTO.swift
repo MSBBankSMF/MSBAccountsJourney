@@ -8,19 +8,31 @@
 import Foundation
 
 public struct AccountSummaryDTO: Decodable, Sendable {
-    public let id: String
-    public let name: String?
-    public let balance: String?
-    public let currencyCode: String?
-    public let additions: [String: String]?
-    
-    func toDomainModel() -> MSBAccountsJourney.AccountsSummary {
-        return MSBAccountsJourney.AccountsSummary(
-            id: id,
-            name: name,
-            balance: balance,
-            currencyCode: currencyCode,
-            additions: additions
-        )
+    public let currentAccounts: CurrentAccountDTO?
+}
+
+extension AccountSummaryDTO {
+    public struct CurrentAccountDTO: Decodable, Sendable  {
+        public let products: [AccountSummaryItemDTO]?
     }
+    
+    public struct AccountSummaryItemDTO: Decodable, Sendable {
+        public let id: String
+        public let name: String?
+        public let availableBalance: String?
+        public let currency: String?
+        public let additions: [String: String]?
+        
+        func toDomainModel() -> MSBAccountsJourney.AccountsSummary {
+            return MSBAccountsJourney.AccountsSummary(
+                id: id,
+                name: name,
+                balance: availableBalance,
+                currencyCode: currency,
+                additions: additions
+            )
+        }
+    }
+
+
 }

@@ -23,11 +23,12 @@ struct AccountsListView: MSBView {
         ZStack {
             VStack {
                 if let account = viewModel.allAccounts.first {
-                    AccountView(account: account) // Bind data to a custom SwiftUI AccountView
+                    AccountView(account: account)
                         .padding()
                 } else {
-                    Text("No Accounts Available")
-                        .foregroundColor(.gray)
+                    if viewModel.screenState == .loaded {
+                        Text("No Accounts Available").foregroundColor(.gray)
+                    }
                 }
             }
             if showLoading {

@@ -21,9 +21,9 @@ public final class FakeArrangementManagerService: AccountRemoteDataSource {
         )
     }
     
-    public func getAccountSummary() async throws -> [AccountSummaryDTO] {
+    public func getAccountSummary() async throws -> [AccountSummaryDTO.AccountSummaryItemDTO] {
         return [
-            AccountSummaryDTO(id: "1", name: "Dat", balance: "1000", currencyCode: "VND", additions: nil)
+            AccountSummaryDTO.AccountSummaryItemDTO(id: "1", name: "Dat", availableBalance: "1000", currency: "VND", additions: nil)
         ]
     }
 }
