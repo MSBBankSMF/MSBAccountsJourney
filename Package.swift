@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(path: "../MSBCore"),
         .package(path: "../MSBCoreUI"),
-        .package(path: "../PublicLib/SnapKit"),
+        .package(path: "../MSBPublicLibs/SnapKit"),
         .package(path: "../MSBPublicLibs/RxCocoa"),
         .package(path: "../MSBPublicLibs/Resolver"),
         .package(url: "https://github.com/CombineCommunity/CombineCocoa.git", from: "0.2.1"),
