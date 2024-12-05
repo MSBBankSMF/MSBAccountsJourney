@@ -15,8 +15,6 @@ let package = Package(
     dependencies: [
         .package(path: "../MSBCore"),
         .package(path: "../MSBCoreUI"),
-        .package(path: "../MSBPublicLibs/SnapKit"),
-        .package(path: "../MSBPublicLibs/RxCocoa"),
         .package(path: "../MSBPublicLibs/Resolver"),
         .package(url: "https://github.com/CombineCommunity/CombineCocoa.git", from: "0.2.1"),
         .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "15.0.0")),
@@ -32,8 +30,7 @@ let package = Package(
                 .product(name: "MSBPreferences", package: "MSBCore"),
                 .product(name: "MSBNetworking", package: "MSBCore"),
                 .product(name: "MSBDeeplink", package: "MSBCore"),
-                "SnapKit",
-                "RxCocoa",
+                .product(name: "MSBUtilities", package: "MSBCore"),
                 "Resolver",
                 "CombineCocoa",
                 "Moya"
