@@ -7,7 +7,7 @@
 
 import Foundation
 import Resolver
-import MSBUtilities
+import MSBFoundation
 import Moya
 
 extension MSBAccountsJourney {
@@ -37,9 +37,6 @@ extension MSBAccountsJourney {
             }()
 
             Resolver.register {
-    //            AccountsListSummaryUseCaseImp(
-    //                repository: AccountRepository(remoteDataSource: FakeArrangementManagerService())
-    //            ) as AccountsListUseCase
                 AccountsListSummaryUseCaseImp(
                     repository: AccountRepository(remoteDataSource: arrangementManagerService)
                 ) as AccountsListUseCase

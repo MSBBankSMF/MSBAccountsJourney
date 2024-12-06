@@ -2,10 +2,11 @@
 //  MSBAccountsJourneyExampleTests.swift
 //  MSBAccountsJourneyExampleTests
 //
-//  Created by doandat on 11/11/24.
+//  Created by datdv1 on 6/12/24.
 //
 
 import Testing
+@testable import MSBAccountsJourneyExample
 
 struct MSBAccountsJourneyExampleTests {
 

@@ -2,7 +2,7 @@
 //  MSBAccountsJourneyExampleUITestsLaunchTests.swift
 //  MSBAccountsJourneyExampleUITests
 //
-//  Created by doandat on 11/11/24.
+//  Created by datdv1 on 6/12/24.
 //
 
 import XCTest

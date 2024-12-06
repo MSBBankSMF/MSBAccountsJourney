@@ -7,44 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B03FB7C22CE1D951009A9ED3 /* MSBAccountsJourney in Frameworks */ = {isa = PBXBuildFile; productRef = B03FB7C12CE1D951009A9ED3 /* MSBAccountsJourney */; };
+		A958D1852D02B28400CD9B97 /* MSBAccountsJourney in Frameworks */ = {isa = PBXBuildFile; productRef = A958D1842D02B28400CD9B97 /* MSBAccountsJourney */; };
+		A958D18A2D02B3AB00CD9B97 /* PluggableAppDelegate in Frameworks */ = {isa = PBXBuildFile; productRef = A958D1892D02B3AB00CD9B97 /* PluggableAppDelegate */; };
+		A958D18C2D02B3AB00CD9B97 /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = A958D18B2D02B3AB00CD9B97 /* Atlantis */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0F75B852CE1C601000CCEEE /* PBXContainerItemProxy */ = {
+		A958CF2B2D02920C00CD9B97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B0F75B6B2CE1C600000CCEEE /* Project object */;
+			containerPortal = A958CF0C2D02920A00CD9B97 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B0F75B722CE1C600000CCEEE;
+			remoteGlobalIDString = A958CF132D02920A00CD9B97;
 			remoteInfo = MSBAccountsJourneyExample;
 		};
-		B0F75B8F2CE1C601000CCEEE /* PBXContainerItemProxy */ = {
+		A958CF352D02920C00CD9B97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B0F75B6B2CE1C600000CCEEE /* Project object */;
+			containerPortal = A958CF0C2D02920A00CD9B97 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B0F75B722CE1C600000CCEEE;
+			remoteGlobalIDString = A958CF132D02920A00CD9B97;
 			remoteInfo = MSBAccountsJourneyExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B0F75B732CE1C600000CCEEE /* MSBAccountsJourneyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSBAccountsJourneyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0F75B842CE1C601000CCEEE /* MSBAccountsJourneyExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSBAccountsJourneyExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0F75B8E2CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSBAccountsJourneyExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A958CF142D02920A00CD9B97 /* MSBAccountsJourneyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSBAccountsJourneyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A958CF2A2D02920C00CD9B97 /* MSBAccountsJourneyExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSBAccountsJourneyExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A958CF342D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSBAccountsJourneyExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A958CF3C2D02920C00CD9B97 /* Exceptions for "MSBAccountsJourneyExample" folder in "MSBAccountsJourneyExample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A958CF132D02920A00CD9B97 /* MSBAccountsJourneyExample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B0F75B752CE1C600000CCEEE /* MSBAccountsJourneyExample */ = {
+		A958CF162D02920A00CD9B97 /* MSBAccountsJourneyExample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A958CF3C2D02920C00CD9B97 /* Exceptions for "MSBAccountsJourneyExample" folder in "MSBAccountsJourneyExample" target */,
+			);
 			path = MSBAccountsJourneyExample;
 			sourceTree = "<group>";
 		};
-		B0F75B872CE1C601000CCEEE /* MSBAccountsJourneyExampleTests */ = {
+		A958CF2D2D02920C00CD9B97 /* MSBAccountsJourneyExampleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MSBAccountsJourneyExampleTests;
 			sourceTree = "<group>";
 		};
-		B0F75B912CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests */ = {
+		A958CF372D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MSBAccountsJourneyExampleUITests;
 			sourceTree = "<group>";
@@ -52,22 +67,24 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B0F75B702CE1C600000CCEEE /* Frameworks */ = {
+		A958CF112D02920A00CD9B97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03FB7C22CE1D951009A9ED3 /* MSBAccountsJourney in Frameworks */,
+				A958D1852D02B28400CD9B97 /* MSBAccountsJourney in Frameworks */,
+				A958D18C2D02B3AB00CD9B97 /* Atlantis in Frameworks */,
+				A958D18A2D02B3AB00CD9B97 /* PluggableAppDelegate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0F75B812CE1C601000CCEEE /* Frameworks */ = {
+		A958CF272D02920C00CD9B97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0F75B8B2CE1C601000CCEEE /* Frameworks */ = {
+		A958CF312D02920C00CD9B97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,28 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B0F75B6A2CE1C600000CCEEE = {
+		A958CF0B2D02920A00CD9B97 = {
 			isa = PBXGroup;
 			children = (
-				B0F75B752CE1C600000CCEEE /* MSBAccountsJourneyExample */,
-				B0F75B872CE1C601000CCEEE /* MSBAccountsJourneyExampleTests */,
-				B0F75B912CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests */,
-				B0F75BB22CE1C65F000CCEEE /* Frameworks */,
-				B0F75B742CE1C600000CCEEE /* Products */,
+				A958CF162D02920A00CD9B97 /* MSBAccountsJourneyExample */,
+				A958CF2D2D02920C00CD9B97 /* MSBAccountsJourneyExampleTests */,
+				A958CF372D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests */,
+				A958D1832D02B28400CD9B97 /* Frameworks */,
+				A958CF152D02920A00CD9B97 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B0F75B742CE1C600000CCEEE /* Products */ = {
+		A958CF152D02920A00CD9B97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0F75B732CE1C600000CCEEE /* MSBAccountsJourneyExample.app */,
-				B0F75B842CE1C601000CCEEE /* MSBAccountsJourneyExampleTests.xctest */,
-				B0F75B8E2CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests.xctest */,
+				A958CF142D02920A00CD9B97 /* MSBAccountsJourneyExample.app */,
+				A958CF2A2D02920C00CD9B97 /* MSBAccountsJourneyExampleTests.xctest */,
+				A958CF342D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0F75BB22CE1C65F000CCEEE /* Frameworks */ = {
+		A958D1832D02B28400CD9B97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -108,138 +125,142 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0F75B722CE1C600000CCEEE /* MSBAccountsJourneyExample */ = {
+		A958CF132D02920A00CD9B97 /* MSBAccountsJourneyExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0F75B982CE1C601000CCEEE /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExample" */;
+			buildConfigurationList = A958CF3D2D02920C00CD9B97 /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExample" */;
 			buildPhases = (
-				B0F75B6F2CE1C600000CCEEE /* Sources */,
-				B0F75B702CE1C600000CCEEE /* Frameworks */,
-				B0F75B712CE1C600000CCEEE /* Resources */,
+				A958CF102D02920A00CD9B97 /* Sources */,
+				A958CF112D02920A00CD9B97 /* Frameworks */,
+				A958CF122D02920A00CD9B97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B0F75B752CE1C600000CCEEE /* MSBAccountsJourneyExample */,
+				A958CF162D02920A00CD9B97 /* MSBAccountsJourneyExample */,
 			);
 			name = MSBAccountsJourneyExample;
 			packageProductDependencies = (
-				B03FB7C12CE1D951009A9ED3 /* MSBAccountsJourney */,
+				A958D1842D02B28400CD9B97 /* MSBAccountsJourney */,
+				A958D1892D02B3AB00CD9B97 /* PluggableAppDelegate */,
+				A958D18B2D02B3AB00CD9B97 /* Atlantis */,
 			);
 			productName = MSBAccountsJourneyExample;
-			productReference = B0F75B732CE1C600000CCEEE /* MSBAccountsJourneyExample.app */;
+			productReference = A958CF142D02920A00CD9B97 /* MSBAccountsJourneyExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B0F75B832CE1C601000CCEEE /* MSBAccountsJourneyExampleTests */ = {
+		A958CF292D02920C00CD9B97 /* MSBAccountsJourneyExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0F75B9B2CE1C601000CCEEE /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleTests" */;
+			buildConfigurationList = A958CF422D02920C00CD9B97 /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleTests" */;
 			buildPhases = (
-				B0F75B802CE1C601000CCEEE /* Sources */,
-				B0F75B812CE1C601000CCEEE /* Frameworks */,
-				B0F75B822CE1C601000CCEEE /* Resources */,
+				A958CF262D02920C00CD9B97 /* Sources */,
+				A958CF272D02920C00CD9B97 /* Frameworks */,
+				A958CF282D02920C00CD9B97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0F75B862CE1C601000CCEEE /* PBXTargetDependency */,
+				A958CF2C2D02920C00CD9B97 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B0F75B872CE1C601000CCEEE /* MSBAccountsJourneyExampleTests */,
+				A958CF2D2D02920C00CD9B97 /* MSBAccountsJourneyExampleTests */,
 			);
 			name = MSBAccountsJourneyExampleTests;
 			packageProductDependencies = (
 			);
 			productName = MSBAccountsJourneyExampleTests;
-			productReference = B0F75B842CE1C601000CCEEE /* MSBAccountsJourneyExampleTests.xctest */;
+			productReference = A958CF2A2D02920C00CD9B97 /* MSBAccountsJourneyExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B0F75B8D2CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests */ = {
+		A958CF332D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0F75B9E2CE1C601000CCEEE /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleUITests" */;
+			buildConfigurationList = A958CF452D02920C00CD9B97 /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleUITests" */;
 			buildPhases = (
-				B0F75B8A2CE1C601000CCEEE /* Sources */,
-				B0F75B8B2CE1C601000CCEEE /* Frameworks */,
-				B0F75B8C2CE1C601000CCEEE /* Resources */,
+				A958CF302D02920C00CD9B97 /* Sources */,
+				A958CF312D02920C00CD9B97 /* Frameworks */,
+				A958CF322D02920C00CD9B97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0F75B902CE1C601000CCEEE /* PBXTargetDependency */,
+				A958CF362D02920C00CD9B97 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B0F75B912CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests */,
+				A958CF372D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests */,
 			);
 			name = MSBAccountsJourneyExampleUITests;
 			packageProductDependencies = (
 			);
 			productName = MSBAccountsJourneyExampleUITests;
-			productReference = B0F75B8E2CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests.xctest */;
+			productReference = A958CF342D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B0F75B6B2CE1C600000CCEEE /* Project object */ = {
+		A958CF0C2D02920A00CD9B97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					B0F75B722CE1C600000CCEEE = {
-						CreatedOnToolsVersion = 16.0;
+					A958CF132D02920A00CD9B97 = {
+						CreatedOnToolsVersion = 16.1;
 					};
-					B0F75B832CE1C601000CCEEE = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = B0F75B722CE1C600000CCEEE;
+					A958CF292D02920C00CD9B97 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A958CF132D02920A00CD9B97;
 					};
-					B0F75B8D2CE1C601000CCEEE = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = B0F75B722CE1C600000CCEEE;
+					A958CF332D02920C00CD9B97 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A958CF132D02920A00CD9B97;
 					};
 				};
 			};
-			buildConfigurationList = B0F75B6E2CE1C600000CCEEE /* Build configuration list for PBXProject "MSBAccountsJourneyExample" */;
+			buildConfigurationList = A958CF0F2D02920A00CD9B97 /* Build configuration list for PBXProject "MSBAccountsJourneyExample" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = B0F75B6A2CE1C600000CCEEE;
+			mainGroup = A958CF0B2D02920A00CD9B97;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B03FB7C02CE1D946009A9ED3 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */,
+				A958CF482D02922600CD9B97 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */,
+				A958D1862D02B35400CD9B97 /* XCLocalSwiftPackageReference "../../MSBPublicLibs/PluggableAppDelegate" */,
+				A958D1872D02B37600CD9B97 /* XCRemoteSwiftPackageReference "atlantis" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B0F75B742CE1C600000CCEEE /* Products */;
+			productRefGroup = A958CF152D02920A00CD9B97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0F75B722CE1C600000CCEEE /* MSBAccountsJourneyExample */,
-				B0F75B832CE1C601000CCEEE /* MSBAccountsJourneyExampleTests */,
-				B0F75B8D2CE1C601000CCEEE /* MSBAccountsJourneyExampleUITests */,
+				A958CF132D02920A00CD9B97 /* MSBAccountsJourneyExample */,
+				A958CF292D02920C00CD9B97 /* MSBAccountsJourneyExampleTests */,
+				A958CF332D02920C00CD9B97 /* MSBAccountsJourneyExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B0F75B712CE1C600000CCEEE /* Resources */ = {
+		A958CF122D02920A00CD9B97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0F75B822CE1C601000CCEEE /* Resources */ = {
+		A958CF282D02920C00CD9B97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0F75B8C2CE1C601000CCEEE /* Resources */ = {
+		A958CF322D02920C00CD9B97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,21 +270,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B0F75B6F2CE1C600000CCEEE /* Sources */ = {
+		A958CF102D02920A00CD9B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0F75B802CE1C601000CCEEE /* Sources */ = {
+		A958CF262D02920C00CD9B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0F75B8A2CE1C601000CCEEE /* Sources */ = {
+		A958CF302D02920C00CD9B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,20 +294,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B0F75B862CE1C601000CCEEE /* PBXTargetDependency */ = {
+		A958CF2C2D02920C00CD9B97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0F75B722CE1C600000CCEEE /* MSBAccountsJourneyExample */;
-			targetProxy = B0F75B852CE1C601000CCEEE /* PBXContainerItemProxy */;
+			target = A958CF132D02920A00CD9B97 /* MSBAccountsJourneyExample */;
+			targetProxy = A958CF2B2D02920C00CD9B97 /* PBXContainerItemProxy */;
 		};
-		B0F75B902CE1C601000CCEEE /* PBXTargetDependency */ = {
+		A958CF362D02920C00CD9B97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0F75B722CE1C600000CCEEE /* MSBAccountsJourneyExample */;
-			targetProxy = B0F75B8F2CE1C601000CCEEE /* PBXContainerItemProxy */;
+			target = A958CF132D02920A00CD9B97 /* MSBAccountsJourneyExample */;
+			targetProxy = A958CF352D02920C00CD9B97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B0F75B962CE1C601000CCEEE /* Debug */ = {
+		A958CF3E2D02920C00CD9B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MSBAccountsJourneyExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.account.MSBAccountsJourneyExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A958CF3F2D02920C00CD9B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MSBAccountsJourneyExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.account.MSBAccountsJourneyExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A958CF402D02920C00CD9B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,16 +417,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B0F75B972CE1C601000CCEEE /* Release */ = {
+		A958CF412D02920C00CD9B97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -393,216 +474,119 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B0F75B992CE1C601000CCEEE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MSBAccountsJourneyExample/MSBAccountsJourneyExample.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MSBAccountsJourneyExample/Preview Content\"";
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MSBAccountsJourneyExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		B0F75B9A2CE1C601000CCEEE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MSBAccountsJourneyExample/MSBAccountsJourneyExample.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MSBAccountsJourneyExample/Preview Content\"";
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MSBAccountsJourneyExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		B0F75B9C2CE1C601000CCEEE /* Debug */ = {
+		A958CF432D02920C00CD9B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MSBAccountsJourneyExampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.account.MSBAccountsJourneyExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSBAccountsJourneyExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MSBAccountsJourneyExample";
-				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		B0F75B9D2CE1C601000CCEEE /* Release */ = {
+		A958CF442D02920C00CD9B97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MSBAccountsJourneyExampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.account.MSBAccountsJourneyExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSBAccountsJourneyExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MSBAccountsJourneyExample";
-				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		B0F75B9F2CE1C601000CCEEE /* Debug */ = {
+		A958CF462D02920C00CD9B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MSBAccountsJourneyExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.account.MSBAccountsJourneyExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MSBAccountsJourneyExample;
-				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		B0F75BA02CE1C601000CCEEE /* Release */ = {
+		A958CF472D02920C00CD9B97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msb.MSBAccountsJourneyExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.account.MSBAccountsJourneyExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MSBAccountsJourneyExample;
-				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0F75B6E2CE1C600000CCEEE /* Build configuration list for PBXProject "MSBAccountsJourneyExample" */ = {
+		A958CF0F2D02920A00CD9B97 /* Build configuration list for PBXProject "MSBAccountsJourneyExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0F75B962CE1C601000CCEEE /* Debug */,
-				B0F75B972CE1C601000CCEEE /* Release */,
+				A958CF402D02920C00CD9B97 /* Debug */,
+				A958CF412D02920C00CD9B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0F75B982CE1C601000CCEEE /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExample" */ = {
+		A958CF3D2D02920C00CD9B97 /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0F75B992CE1C601000CCEEE /* Debug */,
-				B0F75B9A2CE1C601000CCEEE /* Release */,
+				A958CF3E2D02920C00CD9B97 /* Debug */,
+				A958CF3F2D02920C00CD9B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0F75B9B2CE1C601000CCEEE /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleTests" */ = {
+		A958CF422D02920C00CD9B97 /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0F75B9C2CE1C601000CCEEE /* Debug */,
-				B0F75B9D2CE1C601000CCEEE /* Release */,
+				A958CF432D02920C00CD9B97 /* Debug */,
+				A958CF442D02920C00CD9B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0F75B9E2CE1C601000CCEEE /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleUITests" */ = {
+		A958CF452D02920C00CD9B97 /* Build configuration list for PBXNativeTarget "MSBAccountsJourneyExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0F75B9F2CE1C601000CCEEE /* Debug */,
-				B0F75BA02CE1C601000CCEEE /* Release */,
+				A958CF462D02920C00CD9B97 /* Debug */,
+				A958CF472D02920C00CD9B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -610,19 +594,44 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		B03FB7C02CE1D946009A9ED3 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */ = {
+		A958CF482D02922600CD9B97 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../MSBAccountsJourney;
 		};
+		A958D1862D02B35400CD9B97 /* XCLocalSwiftPackageReference "../../MSBPublicLibs/PluggableAppDelegate" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../MSBPublicLibs/PluggableAppDelegate;
+		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A958D1872D02B37600CD9B97 /* XCRemoteSwiftPackageReference "atlantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ProxymanApp/atlantis";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		B03FB7C12CE1D951009A9ED3 /* MSBAccountsJourney */ = {
+		A958D1842D02B28400CD9B97 /* MSBAccountsJourney */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B03FB7C02CE1D946009A9ED3 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */;
+			package = A958CF482D02922600CD9B97 /* XCLocalSwiftPackageReference "../../MSBAccountsJourney" */;
 			productName = MSBAccountsJourney;
+		};
+		A958D1892D02B3AB00CD9B97 /* PluggableAppDelegate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A958D1862D02B35400CD9B97 /* XCLocalSwiftPackageReference "../../MSBPublicLibs/PluggableAppDelegate" */;
+			productName = PluggableAppDelegate;
+		};
+		A958D18B2D02B3AB00CD9B97 /* Atlantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A958D1872D02B37600CD9B97 /* XCRemoteSwiftPackageReference "atlantis" */;
+			productName = Atlantis;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = B0F75B6B2CE1C600000CCEEE /* Project object */;
+	rootObject = A958CF0C2D02920A00CD9B97 /* Project object */;
 }

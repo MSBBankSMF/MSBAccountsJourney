@@ -30,7 +30,7 @@ let package = Package(
                 .product(name: "MSBPreferences", package: "MSBCore"),
                 .product(name: "MSBNetworking", package: "MSBCore"),
                 .product(name: "MSBDeeplink", package: "MSBCore"),
-                .product(name: "MSBUtilities", package: "MSBCore"),
+                .product(name: "MSBFoundation", package: "MSBCore"),
                 "Resolver",
                 "CombineCocoa",
                 "Moya"
