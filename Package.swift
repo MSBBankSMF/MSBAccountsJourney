@@ -25,7 +25,6 @@ let package = Package(
         .target(
             name: "MSBAccountsJourney",
             dependencies: [
-                "MSBCore",
                 .product(name: "MSBCoreUI", package: "MSBCoreUI"),
                 .product(name: "MSBPreferences", package: "MSBCore"),
                 .product(name: "MSBNetworking", package: "MSBCore"),
